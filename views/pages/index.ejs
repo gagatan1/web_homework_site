@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../inc/head') %>
+  <body>
+    <%- include('../inc/header') %>
+    <section id="new-tweet">
+      <h2>Post a Tweet</h2>
+      <textarea id="tweet-text" placeholder="What's happening?"></textarea>
+      <button id="post-tweet">Tweet</button>
+    </section>
+
+    <section id="tweets">
+      <h2>Recent Tweets</h2>
+      <!-- Tweets will be dynamically added here -->
+      <div class="tweet">
+        <p><strong>User1:</strong> This is a sample tweet!</p>
+      </div>
+      <div class="tweet">
+        <p><strong>User2:</strong> Another sample tweet here.</p>
+      </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+    <!-- Link to your JavaScript -->
+    <%- include('../inc/footer') %>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../inc/head') %>
+  <body>
+    <%- include('../inc/header') %>
+
+    <h1>Вход</h1>
+    <div class="login-form">
+      <form action="/login" method="post">
+        <!-- Замените /login на ваш обработчик -->
+        <label for="username">Имя пользователя:</label><br />
+        <input type="text" id="username" name="username" required /><br />
+
+        <label for="password">Пароль:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+
+        <button type="submit">Войти</button>
+      </form>
+      <p>Нет аккаунта? <a href="/register">Зарегистрироваться</a></p>
+      <!-- Замените /register на вашу страницу регистрации -->
+      <p><a href="#">Забыли пароль?</a></p>
+      <!--  Ссылка для восстановления пароля (требует реализации) -->
+    </div>
+
+    <%- include('../inc/footer') %>
+  </body>
+</html>

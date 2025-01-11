@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../inc/head') %>
+  <body>
+    <%- include('../inc/header') %>
+
+    <h1>Регистрация</h1>
+    <div class="registration-form">
+      <form action="/register" method="post">
+        <!--  Замените /register на ваш обработчик -->
+        <label for="username">Имя пользователя:</label><br />
+        <input type="text" id="username" name="username" required /><br />
+
+        <label for="password">Пароль:</label><br />
+        <input type="password" id="password" name="password" required /><br />
+
+        <label for="password_confirmation">Подтверждение пароля:</label><br />
+        <input
+          type="password"
+          id="password_confirmation"
+          name="password_confirmation"
+          required
+        /><br /><br />
+
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+      <p>Уже есть аккаунт? <a href="/login">Войти</a></p>
+      <!-- Замените /login на вашу страницу входа -->
+    </div>
+
+    <%- include('../inc/footer') %>
+  </body>
+</html>

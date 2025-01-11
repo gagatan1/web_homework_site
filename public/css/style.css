@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+
+.tweet-form {
+  margin-bottom: 20px;
+}
+
+#tweet-text {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #530808;
+  box-sizing: border-box;
+}
+
+#tweet-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tweet {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
